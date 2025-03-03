@@ -44,6 +44,11 @@ const books = [
         tags: ['html', 'advanced', 'junior', 'mid-senior']
     },
   ];
+//   Crea una funzione che somma due numeri.
+function somma (a,b){
+    return a+b
+}
+
 //   Crea un array (longBooks) con i libri che hanno più di 300 pagine;
 const longBooks = books.filter (book =>{
     return book.pages>300;
