@@ -45,5 +45,18 @@ const books = [
     },
   ];
 //   Creare un array (ages) che contiene le età degli autori dei libri.
+const ages=books.map(book=>{
+    return book.author.age;
+})
+console.log(ages);
+
 // Calcola la somma delle età (agesSum) usando reduce.
+const agesSum=ages.reduce((acc,age)=>{
+    return acc+age;
+
+},0)
+console.log(agesSum);
+
 // Stampa in console l’età media degli autori dei libri.
+const agesAverage=agesSum/ages.length;
+console.log(agesAverage)
